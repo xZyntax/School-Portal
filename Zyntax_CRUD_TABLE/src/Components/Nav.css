@@ -1,0 +1,132 @@
+
+:root{
+    --clr-primary: rgb(52, 211, 108);
+    --clr-primary2: rgb(11, 131, 87);
+    --clr-primary-border: rgb(12, 113, 76);
+    --clr-secondary: rgb(248,241,207) ;
+    --clr-secondary2:rgb(51,51,51);
+    --clr-accent: rgb(221, 172, 11);  
+}
+*,*::after,*::before{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    font-size: 62.5%;
+}
+
+.nav-head{
+    display: flex;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding: 10px 25px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.05rem 1.5rem rgba(0,0,0,0.4rem);
+    background-color: var(--clr-primary2);
+    color: var(--clr-secondary);
+
+}
+
+.main-logo{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.main-logo > img{
+    width: 45px;
+    height: 45px;
+}
+.main-logo > p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.nav-items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav-items a{
+    font-size: 0.92rem;
+    font-weight: 500;
+    padding: 0.923em 20px;
+    border-radius: 7px;
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary-border);
+    
+}
+.btn-open, .btn-close{
+display: none;
+}
+
+@media (max-width: 882px) {
+    body{
+        font-size: 55%;
+    }
+
+    
+}
+
+@media (max-width: 800px){
+
+   
+    .btn-open, .btn-close{
+        display: block;
+    
+    }
+    
+
+    .nav-items{
+        position: fixed;
+        flex-direction: column;
+        min-width: 300px;
+        height: 100vh;
+        background-color: var(--clr-primary2);
+        top: 0;
+        right: -100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 1;
+        padding-top: 4rem;
+        transition: 0.6s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        gap: 5px;
+    }
+
+    .nav-items > a{
+        width: 100%;
+    }
+
+
+
+    .btn-close{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+    }
+
+    .active-toggle{
+        display: block;
+        padding: 5px;
+    
+    }
+
+    .nav-toggle{
+        right: 0%;
+    }
+}
+
+
+

@@ -1,0 +1,169 @@
+:root{
+  --hover-color: rgb(40, 40, 40);
+  --table-color: #6BCF85;
+}
+
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.table-wrap{
+  margin-top: 40px;
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.form-input{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form-input > *{
+  border-radius: 10px;
+  padding: 0.4em;
+  border: none;
+}
+.search{
+  flex: 1;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+.search > input{
+  padding: 0.6em;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+.nav-table{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--clr-primary2);
+  padding: 1.7em 1em;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  gap: 12px;
+  
+  width: auto;
+}
+table tr{
+  color: var(--clr-secondary);
+  background-color: var(--clr-secondary2);
+}
+
+table{
+  border-collapse: collapse;
+  text-align: left;
+  width: 80%;
+  
+  
+
+}
+thead{
+  text-align: center;
+}
+
+
+td{
+  padding: 10px 27px;
+  border: 2px solid var(--clr-primary2);
+
+}
+th{
+  background-color: var(--table-color);
+  padding: 1em;
+  color: var(--clr-secondary2);
+  font-size: 12px;
+
+}
+table thead th:first-child ,table thead th:last-child{
+
+  border-radius: 10px 0 0 0;
+
+}
+table thead th:last-child{
+  border-radius: 0 10px 0 0 ;
+}
+tbody tr{
+  font-size: 12px;
+}
+
+
+tbody tr:hover{
+  background-color: var(--hover-color);
+  transition: 240ms;
+
+}
+
+.form-input button, button{
+  padding: 8px;
+  border: none;
+
+
+}
+
+.form-input button{
+  background-color: var(--clr-accent);
+  color: white;
+  font-weight: 700;
+}
+.form-input > button:hover{
+  background-color: rgb(255, 166, 0);
+ 
+}
+
+.form-input  > input{
+  border: none;
+  background-color: rgb(236, 236, 199);
+}
+
+.editBtn{
+  background-color: var(--clr-accent);
+  border-radius: 10px;
+  color: white;
+}
+.editBtn:hover{
+  background-color: rgb(255, 166, 0);
+  transform: 400ms;
+}
+
+.delBtn{
+  background-color: rgb(231, 113, 113);
+  color: white;
+  border-radius: 10px;
+}
+
+.delBtn:hover{
+transition: 400ms;
+background-color: rgb(216, 73, 73);
+}
+.page{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+@media (max-width: 780px) {
+  .table-wrap {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+
+

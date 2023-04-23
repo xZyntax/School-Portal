@@ -1,0 +1,14 @@
+.footer-content{
+    padding: 4em;
+    width: 100%;
+    background-color: var(--clr-primary2);
+}
+
+
+
+.footer-content  p{
+    color: var(--clr-secondary);
+    font-size: 0.7rem;
+    font-weight: 700;
+
+}

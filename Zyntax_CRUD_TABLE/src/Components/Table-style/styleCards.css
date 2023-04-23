@@ -1,0 +1,58 @@
+:root{
+    --clr-primary: rgb(52, 211, 108);
+    --clr-primary2: rgb(11, 131, 87);
+    --clr-primary-border: rgb(12, 113, 76);
+    --clr-secondary: rgb(248,241,207) ;
+    --clr-secondary2:rgb(51,51,51);
+    --clr-accent: rgb(221, 172, 11);  
+}
+.Cards{
+    cursor: default;
+    background-color: var(--clr-secondary);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 203px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+}
+
+.card-title{
+    color: var(--clr-primary2);
+    font-size: 1.8rem;
+    font-weight: 700;
+    align-self: flex-start;
+    
+}
+.Cards .card-desc{
+    display: inline-block;
+    color: var(--clr-secondary2);
+    align-self: flex-start;
+    font-size: 12px;
+}
+.btn-click{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-accent);
+    border-radius: 10px;
+    align-self: center;
+    padding: 10px 50px;
+    margin-top: 15px;
+    
+    
+    
+}
+
+.btn-click a{
+    color :var(--clr-secondary);
+    font: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
